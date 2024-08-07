@@ -1,92 +1,91 @@
-#content{
-    margin: 1%;
-    background-color: rgba(196, 195, 194, 0.308);
+#content {
+  margin: 1%;
+  background-color: rgba(196, 195, 194, 0.308);
 }
-.image{
-    background: url(../todolist/images/trash_can_52px.png) no-repeat;
-    color: transparent;
-    background-size: 90%;
-    border: none;
-    cursor: pointer;
+.image {
+  background: url(../todolist/images/trash_can_52px.png) no-repeat;
+  color: transparent;
+  background-size: 90%;
+  border: none;
+  cursor: pointer;
 }
-.image1{
-    background: url(../todolist/images/edit_26px.png) no-repeat;
-    color: transparent;
-    background-size: 90%;
-    border: none;
-    cursor: pointer;
+.image1 {
+  background: url(../todolist/images/edit_26px.png) no-repeat;
+  color: transparent;
+  background-size: 90%;
+  border: none;
+  cursor: pointer;
 }
-#tache-content tr td{
-    display: flex;
-    justify-content: space-between;
+#tache-content tr td {
+  display: flex;
+  justify-content: space-between;
 }
-#tache-content tr{
-    border: 1px solid rgb(136, 134, 134);
-    background-color: rgba(250, 235, 215, 0.521);
-    box-shadow: 0.5px 1px 1.8px;
+#tache-content tr {
+  border: 1px solid rgb(136, 134, 134);
+  background-color: rgba(250, 235, 215, 0.521);
+  box-shadow: 0.5px 1px 1.8px;
 }
-#table-button{
-    border-collapse: collapse ;
-    padding: 0px;
+#table-button {
+  border-collapse: collapse;
+  padding: 0px;
 }
-#table-button tr td{
-    border: 1px solid rgb(22, 151, 236);
-    padding: 0px;
+#table-button tr td {
+  border: 1px solid rgb(22, 151, 236);
+  padding: 0px;
 }
-#table-button button{
-    border: none;
-    margin: 0%;
-    cursor: pointer;
-    height: 35px;
+#table-button button {
+  border: none;
+  margin: 0%;
+  cursor: pointer;
+  height: 35px;
 }
-#table-button button:hover{
-    border: none;
-    color: white;
-    margin: 0%;
-    cursor: pointer;
-    height: 35px;
-    background-color:rgb(122, 197, 247);
+#table-button button:hover {
+  border: none;
+  color: white;
+  margin: 0%;
+  cursor: pointer;
+  height: 35px;
+  background-color: rgb(122, 197, 247);
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  height: 32.5px;
+  width: 15%;
+  background-color: rgb(122, 197, 247);
+}
+input[type="text"] {
+  height: 25px;
+}
+input[type="text"]:focus {
+  height: 25px;
+  outline: none;
+}
+.active {
+  background-color: rgb(122, 197, 247);
+}
+input[type="submit"]:hover {
+  border: none;
+  cursor: pointer;
+  color: white;
+  height: 32.5px;
+  width: 15%;
+  background-color: rgba(9, 129, 209, 0.788);
+}
 
+.image1:hover {
+  background: url(../todolist/images/edit_file_32px.png) no-repeat;
+  color: transparent;
+  background-size: 90%;
+  background-color: black;
+  border: none;
+  cursor: pointer;
 }
-input[type="submit"]{
-    border: none;
-    cursor: pointer;
-    height: 32.5px;
-    width: 15%;
-    background-color:rgb(122, 197, 247);
-
-}
-input[type="text"]{
-    height: 25px;
-}input[type="text"]:focus{
-    height: 25px;
-    outline: none;
-}
-.active{
-    background-color: rgb(122, 197, 247);
-}
-input[type="submit"]:hover{
-    border: none;
-    cursor: pointer;
-    color: white;
-    height: 32.5px;
-    width: 15%;
-    background-color:rgba(9, 129, 209, 0.788);
-}
- 
-.image1:hover{
-    background: url(../todolist/images/edit_file_32px.png) no-repeat;
-    color: transparent;
-    background-size: 90%;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-}
-.image:hover{
-    background: url(../todolist/images/trash_24px_black.png) no-repeat;
-    color: transparent;
-    background-size: 90%;
-    background-color: black;
-    border: none;
-    cursor: pointer;
+.image:hover {
+  background: url(../todolist/images/trash_24px_black.png) no-repeat;
+  color: transparent;
+  background-size: 90%;
+  background-color: black;
+  border: none;
+  cursor: pointer;
 }

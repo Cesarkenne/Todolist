@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>todoLst1</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="dom.js" type="module"> </script>
-</head>
-<body style="margin:150px;
-            border:1px solid rgb(136, 134, 134);
-            ">
-            <div id="content">
-                <h1 style="text-align: center; color: rgb(57, 151, 214); font-style: italic">TO-DO-LIST</h1>
-                    <div>
-                        <form action="" method="post">
-                            <input type="text" id="text" required autofocus placeholder="Entrer une nouvelle tache" style="width: 82%; "><label><input id="submit" type="submit" value="Ajouter"></label>
-                            <div style="display: flex; justify-content: center; margin: 25px;">
-                                <table id="table-button">
-                                    <tr>
-                                        <td>
-                                            <button class="active bout" id="btn-t">Toutes</button>
-                                        </td>
-                                        <td>
-                                            <button class="bout"  id="btn-f">Faites</button>
-                                        </td>
-                                        <td>
-                                            <button class="bout" id="btn-a">A faire</button>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </form>
-                    </div>
-                <div id="tache-content">
-                    <table style="width: 100%; border-collapse: collapse;">
-                        <script>
-                                function deleteed(params){
-                                const tr=document.querySelector('#line'+params)
-                                tr.remove()
-                                }
-                                function modifieed(params) {
-                                    const input= document.querySelector('#text')
-                                    const labell = document.querySelector('#line'+params+' label')
-                                    const submit= document.querySelector('#submit')
-                                    submit.setAttribute('id','newSub')
-                                    const submit1= document.querySelector('#newSub')
-                                    input.value= labell.innerText 
-                                    submit.setAttribute('value','Modifier')
-                                    submit1.addEventListener('click',(e)=>{
-                                    const labell1 = document.querySelector('#line'+params+' label')
-                                        const input1= document.querySelector('#text')
-                                        labell1.innerText= input1.value
-                                        input.value= ''
-                                        submit1.setAttribute('id','submit')
-                                        submit1.setAttribute('value','Ajouter')
-                                    })
-                                }
-                        </script>
-                    </table>
-                </div>
-            </div>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="dom.js" type="module"></script>
+  </head>
+  <body style="margin: 150px; border: 1px solid rgb(136, 134, 134)">
+    <div id="content">
+      <h1
+        style="text-align: center; color: rgb(57, 151, 214); font-style: italic"
+      >
+        TO-DO-LIST
+      </h1>
+      <div>
+        <form action="" method="post">
+          <input
+            type="text"
+            id="text"
+            required
+            autofocus
+            placeholder="Entrer une nouvelle tache"
+            style="width: 82%"
+          /><label><input id="submit" type="submit" value="Ajouter" /></label>
+          <div style="display: flex; justify-content: center; margin: 25px">
+            <table id="table-button">
+              <tr>
+                <td>
+                  <button class="active bout" id="btn-t">Toutes</button>
+                </td>
+                <td>
+                  <button class="bout" id="btn-f">Faites</button>
+                </td>
+                <td>
+                  <button class="bout" id="btn-a">A faire</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+      <div id="tache-content">
+        <table style="width: 100%; border-collapse: collapse">
+          <script>
+            function deleteed(params) {
+              const tr = document.querySelector("#line" + params);
+              tr.remove();
+            }
+            function modifieed(params) {
+              const input = document.querySelector("#text");
+              const labell = document.querySelector(
+                "#line" + params + " label"
+              );
+              const submit = document.querySelector("#submit");
+              submit.setAttribute("id", "newSub");
+              const submit1 = document.querySelector("#newSub");
+              input.value = labell.innerText;
+              submit.setAttribute("value", "Modifier");
+              submit1.addEventListener("click", (e) => {
+                const labell1 = document.querySelector(
+                  "#line" + params + " label"
+                );
+                const input1 = document.querySelector("#text");
+                labell1.innerText = input1.value;
+                input.value = "";
+                submit1.setAttribute("id", "submit");
+                submit1.setAttribute("value", "Ajouter");
+              });
+            }
+          </script>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
