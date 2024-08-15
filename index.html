@@ -54,8 +54,7 @@
                 "#line" + params + " label"
               );
               const submit = document.querySelector("#submit");
-              submit.setAttribute("id", "newSub");
-              const submit1 = document.querySelector("#newSub");
+              const submit1 = {...submit}
               input.value = labell.innerText;
               submit.setAttribute("value", "Modifier");
               submit1.addEventListener("click", (e) => {
@@ -65,9 +64,12 @@
                 const input1 = document.querySelector("#text");
                 labell1.innerText = input1.value;
                 input.value = "";
-                submit1.setAttribute("id", "submit");
-                submit1.setAttribute("value", "Ajouter");
+                removeListenerSubmit
               });
+            }
+            const removeListenerSubmit= function (){
+              submit1.setAttribute("id", "submit");
+              submit.setAttribute("value", "Ajouter");
             }
           </script>
         </table>

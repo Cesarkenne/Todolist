@@ -3,14 +3,14 @@
   background-color: rgba(196, 195, 194, 0.308);
 }
 .image {
-  background: url(../todolist/images/trash_can_52px.png) no-repeat;
+  background: url(../todolist1/image/trash_can_52px.png) no-repeat;
   color: transparent;
   background-size: 90%;
   border: none;
   cursor: pointer;
 }
 .image1 {
-  background: url(../todolist/images/edit_26px.png) no-repeat;
+  background: url(../todolist1/image/edit_26px.png) no-repeat;
   color: transparent;
   background-size: 90%;
   border: none;
@@ -74,18 +74,16 @@ input[type="submit"]:hover {
 }
 
 .image1:hover {
-  background: url(../todolist/images/edit_file_32px.png) no-repeat;
+  background: url(../todolist1/image/edit_file_32px.png) no-repeat;
   color: transparent;
   background-size: 90%;
-  background-color: black;
   border: none;
   cursor: pointer;
 }
 .image:hover {
-  background: url(../todolist/images/trash_24px_black.png) no-repeat;
+  background: url(../todolist1/image/trash_24px_black.png) no-repeat;
   color: transparent;
   background-size: 90%;
-  background-color: black;
   border: none;
   cursor: pointer;
 }

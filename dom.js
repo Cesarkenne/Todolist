@@ -1,5 +1,5 @@
 import { createElementBy, MesTaches } from "./api.js";
-export const storage = localStorage;
+export const storage = sessionStorage;
 document.addEventListener("DOMContentLoaded", function () {
   let cpt = 0;
   const tad = document.querySelectorAll(".bout");
